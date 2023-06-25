@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>;-;</title>
+  <script>
+    function copyText(inputId) {
+      var textField = document.getElementById(inputId);
+      textField.select();
+      document.execCommand("copy");
+      alert("Text copied to clipboard!");
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="Menu.html">back</a></li>
+    </ul>
+  </nav>
+  
+  <h1>CMD</h1>
+  <p>-Shutdown commands</p>
+  
+  <p>instant</p>
+  <input type="text" id="myTextField1" value="shutdown /s /f /t 0" readonly>
+  <button onclick="copyText('myTextField1')">Copy</button>
+  
+  <p>delayed</p>
+  <input type="text" id="myTextField2" value="shutdown /s /f /t time" readonly>
+  <button onclick="copyText('myTextField2')">Copy</button>
+  
+  <p>abort</p>
+  <input type="text" id="myTextField3" value="shutdown /a" readonly>
+  <button onclick="copyText('myTextField3')">Copy</button>
+  
+  <p>restart</p>
+  <input type="text" id="myTextField4" value="shutdown /r /f /t 0" readonly>
+  <button onclick="copyText('myTextField4')">Copy</button>
+  
+  <p>logoff</p>
+  <input type="text" id="myTextField5" value="

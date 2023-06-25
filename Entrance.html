@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>;-;</title>
+  <script>
+    function validatePassword() {
+      var password = document.getElementById("password").value;
+      
+      // Replace "YOUR_PASSWORD" with your desired password
+      if (password === "deeznuts") {
+        window.location.href = "Main interface.html"; // Redirect to the protected content page
+      } else {
+        alert("Invalid password. Please try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Enter password.</h1>
+  
+  <label for="password">Enter the password:</label>
+  <input type="password" id="password">
+  <button onclick="validatePassword()">Submit</button>
+
+  <nav>
+    <ul>
+      <li><a href="acsess.html">leave</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
